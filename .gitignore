@@ -1,0 +1,39 @@
+node_modules/
+dist/
+.env
+.env.development
+.env.production
+.idea
+dump.rdb
+.note.local
+.local.garbage
+.DS_Store
+catatan.log
+.notes.txt
+.gitlab-ci-local/
+.gitlab-ci/.npmrc
+
+# ignore any ai dump and trash and residue.
+.serena/
+.claude/
+.codex
+.codex/
+.cursor/
+.continue/
+.codeium/
+.antigravity/
+.copilot/
+.ai/
+.llm/
+.agent/
+.agents/
+
+# Local Claude Code MCP + cluster config — contain real credentials.
+# Commit the *.example templates instead; never these.
+.mcp.json
+.kubeconfig.local.yaml
+.elastic-ca.crt
+
+# GitLab internal tools and secrets
+.gitlab-token
+tools/gitlab/
