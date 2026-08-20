@@ -10,7 +10,7 @@ export class AppService {
   
 
     getHansApiDocs(): StreamableFile {
-    const file = createReadStream(join(process.cwd(), '../', 'hans-api-doc.html'));
+    const file = createReadStream(join(process.cwd(), '../../bruno/hans_API_collection/', 'hans-api-doc.html'));
     return new StreamableFile(file, {
       type: 'text/html', // ensures browser renders instead of downloading
       disposition: '',    // prevents Content-Disposition attachment behavior
