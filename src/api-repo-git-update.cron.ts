@@ -5,7 +5,7 @@ import { execa } from 'execa';
 @Injectable()
 export class APIRepoGitUpdateCron {
 
-  @Cron('* /5 * * * *')
+  @Cron('*/5 * * * *')
   async unGitPullPeriodic() {
 
     const REPO_DIR = '/Users/hanzz/Documents/bruno/hans_API_collection';
